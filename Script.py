@@ -9,8 +9,6 @@ ipwlan0 = ni.ifaddresses('wlan0')[ni.AF_INET][0]['addr']
 #Determinar caracteristicas do disco
 obj_Disk = psutil.disk_usage('/')
 
-#format(a, '.2f')
-
 total = obj_Disk.total / (1024.0 ** 3)
 usado = obj_Disk.used / (1024.0 ** 3)
 livre = obj_Disk.free / (1024.0 ** 3)
